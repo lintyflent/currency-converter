@@ -1,0 +1,29 @@
+.header
+  &__container
+    width: 100%
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    margin-top: 10px
+  &__text
+    font-weight: 700
+    color: #2c3e50
+    font-size: 35px
+    text-align: center
+  &__br
+    display: none
+
+@media (max-width: 1140px)
+  .header
+    &__br
+      display: inline
+
+@media (max-width: 576px)
+  .header
+    &__container
+      display: flex
+      flex-direction: column
+      justify-content: space-evenly
+      align-items: center
+    &__text
+      font-size: 21px

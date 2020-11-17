@@ -1,0 +1,32 @@
+.search
+  width: 100%
+  height: 30px
+  overflow: hidden
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  position: relative
+  &:after
+    content: ""
+    display: block
+    background: url("../assets/icons/search.svg") center center/cover no-repeat
+    position: absolute
+    right: 7px
+    opacity: 1
+    transition: all .3s
+    width: 15px
+    height: 15px
+  &_hide-icon
+    &:after
+      opacity: 0
+      right: -30px
+
+  &__input
+    width: 100%
+    height: 30px
+    border: 1px solid #2c3e50
+    border-radius: 10px
+    outline: none
+    padding-left: 5px
+    font-weight: 300
+    font-size: 15px
